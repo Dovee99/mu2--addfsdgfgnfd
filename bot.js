@@ -1,9 +1,9 @@
-cconst Discord = require('discord.js');
+const Discord = require('discord.js');
 const client = new Discord.Client();
  
-const gamestats = [`1help`,`FROZEN 2help`,``,``]
+const gamestats = [`2help`,`FROZEN 2help`,``,``]
 var index = 0
-var timer = 10 // الوقت بالثواني لتغير الستريمنق
+var timer = 20 // الوقت بالثواني لتغير الستريمنق
 client.on("ready", ()=> {
         setInterval(function(){
         client.user.setGame(`${gamestats[index]}`,'https://www.twitch.tv/ACMBOT') 
